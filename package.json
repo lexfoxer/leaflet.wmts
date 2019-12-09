@@ -9,8 +9,5 @@
   "private": false,
   "dependencies": {
     "leaflet": "^1.6.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
