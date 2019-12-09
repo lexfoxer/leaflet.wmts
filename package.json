@@ -1,0 +1,13 @@
+{
+  "name": "leaflet.wmts",
+  "version": "1.0.0",
+  "description": "Add WMTS layers for Leaflet using a Webpack or directly in a browser",
+  "main": "./dist/leaflet.wmts.min.js",
+  "repository": "https://github.com/Lexfoxer/Leaflet.WMTS",
+  "author": "Lexfoxer",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "leaflet": "^1.6.0"
+  }
+}
