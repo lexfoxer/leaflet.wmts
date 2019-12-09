@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+	<script src="./../src/leaflet.wmts.browser.js"></script>
+
+	<title>Leaflet.WMTS – Demo</title>
+</head>
+<body
+	style="margin: 0; padding: 0"
+>
+	<div
+		id="map"
+		style="height: 100vh; width: 100vw"
+	></div>
+
+	<script>
+		const map = L.map('map', {
+			center: [55.702355, 38.012695], // Moscow
+			zoom: 7
+		});
+
+		/** Url to WMTS server */
+		const url = 'example.com'
+
+		/** WMTS tile options */
+		const wmtsOptions = {
+			layer: 'osm:osm',
+			style: "normal",
+			tilematrixset: "EPSG:900913",
+			format: "image/png",
+			attribution: "&copy;"
+		};
+
+		const wmts = new L.TileLayer.WMTS(url, wmtsOptions);
+
+		map.addLayer(wmts);
+	</script>
+</body>
+</html>
