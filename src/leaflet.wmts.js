@@ -1,5 +1,3 @@
-import L from 'leaflet';
-
 L.TileLayer.WMTS = L.TileLayer.extend({
   /** Default params for WMTS */
   defaultWmtsParams: {
@@ -134,5 +132,3 @@ L.TileLayer.WMTS = L.TileLayer.extend({
     return matrixIds3857;
   },
 });
-
-export default L.TileLayer.WMTS;

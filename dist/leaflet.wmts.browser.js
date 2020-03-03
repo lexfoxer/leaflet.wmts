@@ -132,7 +132,3 @@ L.TileLayer.WMTS = L.TileLayer.extend({
     return matrixIds3857;
   },
 });
-
-L.tileLayer.wmts = function (url, options) {
-  return new L.TileLayer.WMTS(url, options);
-};

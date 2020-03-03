@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-	<script src="./../src/leaflet.wmts.browser.js"></script>
+	<script src="./../dist/leaflet.wmts.browser.min.js"></script>
 
 	<title>Leaflet.WMTS – Demo</title>
 </head>
@@ -26,13 +26,13 @@
 		});
 
 		/** Url to WMTS server */
-		const url = "example.com"
+		const url = "https://mapy.geoportal.gov.pl/wss/service/WMTS/guest/wmts/ORTO"
 
 		/** WMTS tile options */
 		const wmtsOptions = {
-			layer: "osm:osm",
-			style: "normal",
-			tilematrixset: "EPSG:900913",
+			layer: "",
+			style: "",
+			tilematrixset: "EPSG:2180",
 			format: "image/png",
 			attribution: "&copy;"
 		};
